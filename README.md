@@ -1,1 +1,1 @@
-# DNN_benchmark_industry_application
+# Performance Modeling of Industrial DNN Applications
