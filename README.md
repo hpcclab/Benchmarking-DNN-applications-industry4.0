@@ -1,1 +1,1 @@
-# dnn_benchmark_industry_application
+# DNN_benchmark_industry_application
