@@ -1,0 +1,2 @@
+Probably Gaussian
+Stat: 0.9342779517173767s and  p: 0.06385154277086258s
