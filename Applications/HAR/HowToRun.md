@@ -1,3 +1,4 @@
+#Instructions for running the human activity recognition model
 prerequesite: sklearn
 
 Download all the files in a specific directory. After that run the python file UCI_ANN.py file with below command:
