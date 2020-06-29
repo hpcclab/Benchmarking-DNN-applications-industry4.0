@@ -1,0 +1,16 @@
+## Instructions to test pre-trained models:
+
+From the links.txt file go to the original repository of the source code. This branch also contains the modified source code for the firenet model that is firenet.py. Replace this file with the downloaded
+file to capture the inference time.
+
+To download and test the supplied code and pre-trained models (with TFLean/OpenCV installed) do:
+
+```
+$ git clone https://github.com/tobybreckon/fire-detection-cnn.git
+$ cd fire-detection-cnn
+$ sh ./download-models.sh
+$ python firenet.py models/test.mp4
+$ python inceptionV1OnFire.py models/test.mp4
+$ python superpixel-inceptionV1OnFire.py models/test.mp4
+
+You can test any video file. You need to put mp4 format video file in models folder and execute the above commands with specified video file.
