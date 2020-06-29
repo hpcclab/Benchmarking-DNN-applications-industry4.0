@@ -1,0 +1,8 @@
+Download the pre-trained models and data from links.txt file along with segmentation.py file from this repository. In the segmentation.py file change the data 
+path "dir_data" and pretrained model path according to your local machine directory. Then run the segmentation.py file with below command:
+
+python3 segmentation.py
+
+This will generate a text file named "ResultFCN8.txt" with captured inference execution time.
+For running the inference 30 times use runSegPred.sh script with below command:
+./runSegPred.sh
