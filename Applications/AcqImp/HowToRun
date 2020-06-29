@@ -1,0 +1,13 @@
+#instructions for running the Acoustic Impedence estimation application
+
+Go to the links.txt file for original github repository. Download or clone the repository in your local machine. In the downloaded directory you will find
+a file named train.py. To capture the inference execution time replace the train.py file of downloaded directory with this train.py file. 
+
+Run the file with below command for training and testing:
+
+python3 train.py
+
+this is a default run with 1200 epochs.
+if you want to run with fixed number of epochs then execute below command: 
+
+python train.py --n_epochs 200
