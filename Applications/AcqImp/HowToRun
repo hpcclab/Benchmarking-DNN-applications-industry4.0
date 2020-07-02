@@ -1,5 +1,22 @@
 #instructions for running the Acoustic Impedence estimation application
 
+Environment Setup:
+
+- Make sure to use python with a version >=3.6 in your linux or ubuntu platform.
+
+-Execute the following commands:
+
+$ sudo apt install python3-pip
+
+(It's better to use tensorflow version 1 instead of tensorflow version 2)
+$ pip install tensorflow==1.14 (or $ pip3 install tensorflow==1.14 )  
+(If you use other version of tensorflow, first you need to uninstall that version by the command: $ pip uninstall tensorflow)
+
+$ pip install open-cv python  (installing cv2 library which is needed for this application)
+
+
+Application running steps:
+
 Go to the links.txt file for original github repository. Download or clone the repository in your local machine. In the downloaded directory you will find
 a file named train.py. To capture the inference execution time replace the train.py file of downloaded directory with this train.py file. 
 
