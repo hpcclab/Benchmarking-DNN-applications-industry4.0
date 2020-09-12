@@ -1,0 +1,32 @@
+## Instructions to test pre-trained models:
+
+Environment setup:
+
+- Make sure to use python with a version >=3.6 in your linux or ubuntu platform.
+
+-Execute the following commands:
+
+$ sudo apt install python3-pip
+
+(It's better to use tensorflow version 1 instead of tensorflow version 2)
+$ pip install tensorflow==1.14 (or $ pip3 install tensorflow==1.14 )  
+(If you use other version of tensorflow, first you need to uninstall that version by the command: $ pip uninstall tensorflow)
+
+$ pip install open-cv python  (installing cv2 library which is needed for this application)
+
+Application running steps:
+
+From the links.txt file go to the original repository of the source code. This branch also contains the modified source code for the firenet model that is firenet.py. Replace this file with the downloaded
+file to capture the inference time.
+
+To download and test the supplied code and pre-trained models (with TFLean/OpenCV installed) do:
+
+```
+$ git clone https://github.com/tobybreckon/fire-detection-cnn.git
+$ cd fire-detection-cnn
+$ sh ./download-models.sh
+$ python firenet.py models/test.mp4
+$ python inceptionV1OnFire.py models/test.mp4
+$ python superpixel-inceptionV1OnFire.py models/test.mp4
+
+You can test any video file. You need to put mp4 format video file in models folder and execute the above commands with specified video file.

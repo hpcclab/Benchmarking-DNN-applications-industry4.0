@@ -1,0 +1,3 @@
+Use below link to download pre-trained FCN-8 model and dataset. 
+
+https://drive.google.com/drive/folders/16i_vmIJrrcBMp1XY7GoW1naNwPlTzZ-I?usp=sharing

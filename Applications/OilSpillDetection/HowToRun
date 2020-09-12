@@ -1,0 +1,24 @@
+Environment setup:
+
+- Make sure to use python with a version >=3.6 in your linux or ubuntu platform.
+
+-Execute the following commands:
+
+$ sudo apt install python3-pip
+
+(It's better to use tensorflow version 1 instead of tensorflow version 2)
+$ pip install tensorflow==1.14 (or $ pip3 install tensorflow==1.14 )  
+(If you use other version of tensorflow, first you need to uninstall that version by the command: $ pip uninstall tensorflow)
+
+$ pip install open-cv python  (installing cv2 library which is needed for this application)
+
+Application running steps:
+
+Download the pre-trained models and data from links.txt file along with segmentation.py file from this repository. In the segmentation.py file change the data 
+path "dir_data" and pretrained model path according to your local machine directory. Then run the segmentation.py file with below command:
+
+python3 segmentation.py
+
+This will generate a text file named "ResultFCN8.txt" with captured inference execution time.
+For running the inference 30 times use runSegPred.sh script with below command:
+./runSegPred.sh

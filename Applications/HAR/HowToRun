@@ -1,0 +1,30 @@
+#Instructions for running the human activity recognition model
+prerequesite: sklearn
+
+Environment setup:
+
+- Make sure to use python with a version >=3.6 in your linux or ubuntu platform.
+
+-Execute the following commands:
+
+$ sudo apt install python3-pip
+
+(It's better to use tensorflow version 1 instead of tensorflow version 2)
+$ pip install tensorflow==1.14 (or $ pip3 install tensorflow==1.14 )  
+(If you use other version of tensorflow, first you need to uninstall that version by the command: $ pip uninstall tensorflow)
+
+$ pip install open-cv python  (installing cv2 library which is needed for this application)
+
+Application running steps:
+
+Download all the files in a specific directory. After that run the python file UCI_ANN.py file with below command:
+python3 UCI_ANN.py
+
+This will generate a file named "ResultofUCIANN.txt" capturing the inference execution time once.
+
+For running the inference 30 times use the bash script runUCI.sh as below command:
+./runUCI.sh
+
+This will generate a file named "ResultofUCIANN.txt" capturing the inference execution time for 30 times.
+
+dataset repo: https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
